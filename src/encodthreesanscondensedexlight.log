@@ -120,3 +120,125 @@ NFSS mappings:
             TS1     OsF     n       onum, pnum
             TS1     TLF     n       onum, tnum
             TS1     TOsF    n       onum, tnum
+
+
+############################################################################
+
+
+[2021-01-14 20:21:35]  /usr/local/texlive/2020/bin/x86_64-linux/autoinst, version 20201218
+
+Command was:
+
+    "/usr/local/texlive/2020/bin/x86_64-linux/autoinst -target=texmf -vendor=public -typeface=encodesanscondensed -encoding=OT1,T1,TS1,LY1 Encod3SansCondensed-Black.otf Encod3SansCondensed-Bold.otf Encod3SansCondensed-ExtraBold.otf Encod3SansCondensed-ExtraLight.otf Encod3SansCondensed-Light.otf Encod3SansCondensed-Medium.otf Encod3SansCondensed-Regular.otf Encod3SansCondensed-SemiBold.otf Encod3SansCondensed-Thin.otf"
+
+----------------------------------------------------------------------------
+
+I'm using the following options:
+
+    encoding(s):        OT1, T1, LY1
+    NFSS:               sf (sanserif)
+
+    lining:             yes
+    oldstyle:           yes
+    proportional:       yes
+    tabular:            yes
+    ts1:                yes
+    smallcaps:          yes
+    swash:              yes
+    titling:            yes
+    superiors:          yes
+    inferiors:          none
+    ornaments:          yes
+    fractions:          no
+    ligatures:          yes
+
+    target:             texmf
+    extra:              
+
+    figurekern:         keep
+
+    nfssweight:         
+    nfsswidth:          
+
+    math:               no
+    mathspacing:        0
+
+    fontname suffix:    (none)
+
+----------------------------------------------------------------------------
+
+Results of font info parsing:
+
+    Encod3SansCondensed-ExtraLight.otf
+        Name:       Encod3SansCondensed-ExtraLight
+        Family:     EncodThreeSansCondensedExLight
+        Subfamily:  
+        Weight:     extralight (275)
+        Width:      condensed (3)
+        Shape:      roman 
+        Size:       0-0
+        Features:   aalt, c2sc, case, ccmp, dlig, dnom, frac, kern, liga, lnum, mark, mkmk, numr, onum, ordn, pnum, smcp, subs, sups, tnum
+
+----------------------------------------------------------------------------
+
+NFSS mappings:
+
+    ul  =>  
+    el  =>  extralight
+    l   =>  
+    sl  =>  
+    m   =>  
+    sb  =>  
+    b   =>  
+    eb  =>  
+    ub  =>  
+
+    uc  =>  
+    ec  =>  
+    c   =>  condensed
+    sc  =>  
+    m   =>  
+    sx  =>  
+    x   =>  
+    ex  =>  
+    ux  =>  
+
+    ------------------------------------------------------------------------
+
+    Encod3SansCondensed-ExtraLight.otf
+
+        Generating these encodings, figure styles and shapes:
+
+            ENC     STYLE   SHAPE   FEATURES USED
+
+            LY1     LF      n       kern, liga, lnum, pnum
+            LY1     LF      sc      kern, liga, lnum, pnum, smcp
+            LY1     OsF     n       kern, liga, onum, pnum
+            LY1     OsF     sc      kern, liga, onum, pnum, smcp
+            LY1     Sup     n       sups
+            LY1     TLF     n       kern, liga, lnum, tnum
+            LY1     TLF     sc      kern, liga, lnum, smcp, tnum
+            LY1     TOsF    n       kern, liga, onum, tnum
+            LY1     TOsF    sc      kern, liga, onum, smcp, tnum
+            OT1     LF      n       kern, liga, lnum, pnum
+            OT1     LF      sc      kern, liga, lnum, pnum, smcp
+            OT1     OsF     n       kern, liga, onum, pnum
+            OT1     OsF     sc      kern, liga, onum, pnum, smcp
+            OT1     Sup     n       sups
+            OT1     TLF     n       kern, liga, lnum, tnum
+            OT1     TLF     sc      kern, liga, lnum, smcp, tnum
+            OT1     TOsF    n       kern, liga, onum, tnum
+            OT1     TOsF    sc      kern, liga, onum, smcp, tnum
+            T1      LF      n       kern, liga, lnum, pnum
+            T1      LF      sc      kern, liga, lnum, pnum, smcp
+            T1      OsF     n       kern, liga, onum, pnum
+            T1      OsF     sc      kern, liga, onum, pnum, smcp
+            T1      Sup     n       sups
+            T1      TLF     n       kern, liga, lnum, tnum
+            T1      TLF     sc      kern, liga, lnum, smcp, tnum
+            T1      TOsF    n       kern, liga, onum, tnum
+            T1      TOsF    sc      kern, liga, onum, smcp, tnum
+            TS1     LF      n       onum, pnum
+            TS1     OsF     n       onum, pnum
+            TS1     TLF     n       onum, tnum
+            TS1     TOsF    n       onum, tnum

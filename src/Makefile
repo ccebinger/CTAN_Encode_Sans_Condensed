@@ -5,4 +5,4 @@ change_fontnames:
 	fontforge -lang=py -script change_fontnames.py *.otf
 
 autoinst:
-	autoinst -target=texmf -vendor=public -typeface=EncodeSansCondensed -encoding=OT1,T1,TS1,LY1 Encod3SansCondensed-*.otf
+	autoinst -target=texmf -vendor=public -typeface=encodesanscondensed -encoding=OT1,T1,TS1,LY1 Encod3SansCondensed-*.otf
