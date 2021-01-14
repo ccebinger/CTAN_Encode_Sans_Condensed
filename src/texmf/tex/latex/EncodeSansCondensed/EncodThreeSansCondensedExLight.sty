@@ -1,0 +1,41 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{EncodThreeSansCondensedExLight}
+    [2021/01/14 (autoinst)  Style file for EncodThreeSansCondensedExLight fonts.]
+
+\RequirePackage{xkeyval}
+\newcommand*{\EncodThreeSansCondensedExLight@scale}{1}
+\DeclareOptionX{scale}{\renewcommand*{\EncodThreeSansCondensedExLight@scale}{#1}}
+\DeclareOptionX{scaled}{\renewcommand*{\EncodThreeSansCondensedExLight@scale}{#1}}
+
+\DeclareOptionX{lining}{\edef\EncodThreeSansCondensedExLight@figurestyle{LF}}
+\DeclareOptionX{oldstyle}{\edef\EncodThreeSansCondensedExLight@figurestyle{OsF}}
+\DeclareOptionX{tabular}{\edef\EncodThreeSansCondensedExLight@figurealign{T}}
+\DeclareOptionX{proportional}{\edef\EncodThreeSansCondensedExLight@figurealign{}}
+\DeclareOptionX{mainfont}{
+    \renewcommand{\familydefault}{\sfdefault}
+}
+\ExecuteOptionsX{oldstyle,proportional}
+\ProcessOptionsX\relax
+
+\RequirePackage{fontenc,textcomp}
+\RequirePackage{ifthen}
+\RequirePackage{mweights}
+
+\IfFileExists{fontaxes.sty}{
+    \RequirePackage{fontaxes}
+    \fa@naming@exception{figures}{{superior}{proportional}}{Sup}
+    \fa@naming@exception{figures}{{superior}{tabular}}{Sup}
+    \def\supfigures{\@nomath\supfigures
+        \fontfigurestyle{superior}\selectfont}
+    \let\sufigures\supfigures
+    \DeclareTextFontCommand{\textsup}{\supfigures}
+    \let\textsu\textsup
+    \let\textsuperior\textsup
+
+}{}
+
+\renewcommand*
+    {\sfdefault}
+    {EncodThreeSansCondensedExLight-\EncodThreeSansCondensedExLight@figurealign\EncodThreeSansCondensedExLight@figurestyle}
+
+\endinput
